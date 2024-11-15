@@ -1,0 +1,120 @@
+.landing{
+    background-image:url(../image/bhautik-patel-DWkI7bCokDU-unsplash.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    filter: blur(10);
+    position: relative;
+}
+.box{
+  padding: 20px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  border: none;
+  outline: none;
+  background-color: #c1a78b80;
+  padding: 15px 56px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 35px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #c1a78b89;
+  }
+  
+  button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #c1a78b89;
+  }
+
+  .number span{
+    font-size: 30px;
+    font-weight: 900;
+    
+  }
+   .box p{
+    font-style: italic;
+    font-weight: 900;
+    font-size: 19px;
+  }
+  .box h2{
+    font-size: 42px;
+    color: #D1C195;
+    font-weight: 800;
+}
+.box header p{
+  font-style: italic;
+  font-size: 40px;
+}
+
+/* //////////////////////////////////////////////////// */
+/* .falling-leaves {
+  position: relative;
+   width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+  z-index: 1122;
+} */
+
+.leaf {
+  position: absolute;
+  top: -50px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../image/Remove-bg.ai_1731646916805.png);
+  background-size:cover ;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall infinite linear;
+}
+
+.leaf:nth-child(1) {
+  left: 10%;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+.leaf:nth-child(2) {
+  left: 30%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+
+.leaf:nth-child(3) {
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+.leaf:nth-child(4) {
+  left: 70%;
+  animation-duration: 5.5s;
+  animation-delay: 1.5s;
+}
+
+.leaf:nth-child(5) {
+  left: 90%;
+  animation-duration: 6.5s;
+  animation-delay: 0.5s;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(50vh) rotate(90deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) rotate(180deg);
+    opacity: 0.5;
+  }
+}
